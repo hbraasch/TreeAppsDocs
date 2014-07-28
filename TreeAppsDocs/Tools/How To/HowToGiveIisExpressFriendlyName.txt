@@ -1,0 +1,49 @@
+Friendly name for IISEXpress
+
+
+Run VS as ADMINISTRATOR.
+Set IIS bindings by modifying file "<MyDocumentsFolder>\IISExpress\config\applicationhost.config" as shown below, change IP address appropriately
+            <site name="TreeNotesServer" id="6">
+                <application path="/" applicationPool="Clr4IntegratedAppPool">
+                    <virtualDirectory path="/" physicalPath="c:\users\heinrich\documents\visual studio 2013\Projects\TreeNotesServer\TreeNotesServer" />
+                </application>
+                <bindings>
+                    <binding protocol="http" bindingInformation="*:46166:localhost" />
+		    		<binding protocol="http" bindingInformation="*:80:10.0.0.14" />
+                </bindings>
+            </site>
+
+
+Open port 80 in firewall (but that is default I think, otherwise use netsh command below)
+For some assistance, use a batch file with the following:
+
+netsh http add urlacl url=http://Heinrich-PC:80/ user=everyone
+netsh firewall add portopening TCP 80 IISExpressWeb enable ALL
+pause
+
+For that there is a bat file in repo called: SetBinding.bat
+
+Remember to change the android code also to use the relevant IP address e.g. 10.0.0.14
+
+------------ Source Info Snippets ----------------------------
+
+http://www.hanselman.com/blog/WorkingWithSSLAtDevelopmentTimeIsEasierWithIISExpress.aspx
+
+C:\Program Files (x86)\IIS Express>IisExpressAdminCmd.exe setupFriendlyHostnameUrl -url:http://daddyisawesome:80/
+Command 'setupFriendlyHostnameUrl' completed
+
+IisExpressAdminCmd.exe setupFriendlyHostnameUrl -url:http://MyServer:80/
+
+C:\Program Files (x86)\IIS Express>IisExpressAdminCmd.exe deleteFriendlyHostnameUrl -url:http://MyServer:80/
+
+Also change file C:\Users\Heinrich\Documents\IISExpress\config\applicationhost.config
+
+<site name="TreeNotesServer" id="6">
+                <application path="/" applicationPool="Clr4IntegratedAppPool">
+                    <virtualDirectory path="/" physicalPath="c:\users\heinrich\documents\visual studio 2013\Projects\TreeNotesServer\TreeNotesServer" />
+                </application>
+                <bindings>
+                    <binding protocol="http" bindingInformation="*:46166:localhost" />
+		    		<binding protocol="http" bindingInformation="*:80:MyServer" />
+                </bindings>
+</site>
