@@ -1,6 +1,8 @@
-Deciduous, tree icon: 
+Deciduous, tree icon: Checkbox, checked icon
 	https://www.iconfinder.com/icons/174603/deciduous_tree_icon#size=128
 	Free for commercial use (Include link to authors website) which is : http://icons8.com/
+	License:	Free for commercial use (Include link to authors website)
+	By:	Visual Pharm
 	
 View,see,watch,eye,visible icon/Folder icon/Bubble, bubble,chat, chat, message,text icon/Globe,world,online icon/Gear,settings,options,tools icon
 	https://www.iconfinder.com/icons/186381/view%2Csee%2Cwatch%2Ceye%2Cvisible_icon#size=512
@@ -14,4 +16,27 @@ Document, edit, icon icon
 	By:	Yannick Lung
 	Icon set:	Hawcons
 	https://www.iconfinder.com/icons/314503/document_edit_icon_icon#size=128
+	
+Shortcuts icon
+	License:	Free for non commercial use
+	By:	Dakirby309
+	Icon set:	Metro Uinvert Dock
+	http://dakirby309.deviantart.com/
+	
+Group, users icon
+	https://www.iconfinder.com/icons/172474/group_users_icon#size=512
+	License:	Creative Commons Attribution-No Derivative Works 3.0 Unported
+	By:	Visual Pharm http://icons8.com/
+	
+Bin, delete, editor, recycle, trash icon
+	https://www.iconfinder.com/icons/284073/bin_delete_editor_recycle_trash_icon#size=512
+	License:	Free for commercial use 
+	By:	LinhPham.me LinhPham.me
+	http://linhpham.me/
+	Icon set:	Miu (View all icons)
+
+Arrow, down icon
+	https://www.iconfinder.com/icons/172566/arrow_down_icon#size=512
+	License:	Creative Commons Attribution-No Derivative Works 3.0 Unported
+	By:	Visual Pharm
 	
